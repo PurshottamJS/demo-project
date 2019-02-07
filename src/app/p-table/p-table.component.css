@@ -1,0 +1,45 @@
+.header th{
+    background-color: #007ad9;
+    color: white;
+}
+.table-header{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+    background-color: #007ad9;
+    color: white;
+}
+.table-header >div{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.table-header >div >div{
+   
+    flex: 1;
+}
+.table-body{
+    display: flex;
+    flex-direction: row;
+    min-height: 30px;
+    line-height: 30px;
+}
+.table-body >div{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.table-body >div >div{
+    
+    flex: 1;
+}
+.table-body .borrower{
+    flex-direction: column;
+}
+.borow-head{
+    color: red;
+}
+.borow-content{
+    color:blue
+}

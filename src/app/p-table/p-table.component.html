@@ -1,0 +1,43 @@
+<p-table [value]="cars"  [paginator]="true" [rows]="2">
+    <ng-template pTemplate="header">
+        <!-- <tr class="header">
+            <th>BORROWER</th>
+            <th>LOAN#</th>
+            <th>LOAN STATUS</th>
+            <th>SSN</th>
+        </tr> -->
+        <div class="table-header">
+            <div >
+                BORROWER
+            </div>
+            <div>
+                <div>LOAN#</div>
+            <div>LOAN STATUS</div>
+            <div>SSN</div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <!-- <tr>
+            <td>{{car.vin}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.brand}}</td>
+            <td>{{car.color}}</td>
+        </tr> -->
+        <div class="table-body">
+            <div class="borrower">
+                <div class="borow-head">{{car.vin.head}}</div>
+                <div class="borow-content">{{car.vin.content}}</div>
+                <div class="borow-content">{{car.vin.content}}</div>
+            </div>
+            <div>
+                <div>{{car.year}}</div>
+                <div>{{car.brand}}</div>
+                <div>{{car.color}}</div>
+            </div>
+        </div>
+    </ng-template>
+    <p-paginator [rows]="1" [totalRecords]="5"></p-paginator>
+
+
+</p-table>
